@@ -21,8 +21,6 @@ function showAppointmentMessage(type, message) {
 
 if (appointmentForm) {
   appointmentForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     appointmentAlert.classList.add("d-none");
 
     const name = document.getElementById("appointmentName");
@@ -84,19 +82,10 @@ if (appointmentForm) {
     }
 
     if (!valid) {
+      event.preventDefault();
       showAppointmentMessage("danger", "Please check the highlighted fields and complete the form correctly.");
       return;
     }
 
-    showAppointmentMessage(
-      "success",
-      `Thanks ${name.value.trim()}. Your appointment request form is complete for ${date.value}. This assessment demo validates the form locally; a real booking system can be connected later.`
-    );
-
-    appointmentForm.reset();
-
-    [name, email, phone, date, message].forEach((field) => {
-      field.classList.remove("is-valid");
-    });
   });
 }

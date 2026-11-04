@@ -153,7 +153,7 @@ function calculateTrip(event) {
     </div>
 
     <div class="calculator-note">
-      
+      .
     </div>
 
     <a href="appointment.html" class="btn btn-light w-100 mt-4">Request A Personalised Quote</a>

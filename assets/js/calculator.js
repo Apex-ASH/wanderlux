@@ -153,7 +153,7 @@ function calculateTrip(event) {
     </div>
 
     <div class="calculator-note">
-      This is an indicative estimate for assessment demonstration purposes. Actual travel prices may vary depending on dates, availability, airlines, accommodation and activities.
+      
     </div>
 
     <a href="appointment.html" class="btn btn-light w-100 mt-4">Request A Personalised Quote</a>
